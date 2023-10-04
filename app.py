@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 import streamlit as st
+from argparse import ArgumentParser
 from PyPDF2 import PdfReader
 from langchain.text_splitter import CharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -49,6 +50,5 @@ def main():
            
         st.write(response)
     
-
 if __name__ == '__main__':
     main()
